@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #030014;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.container{
+    max-width: 1530px;
+    margin: 0 auto;
+}
+
+.navbar{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin: 30px;
+
+    & .logo{
+        font-size: 36px;
+        font-weight: 700;
+        color: aqua to tomato;
+        background:linear-gradient(to right,#243FE2 ,#E224DB);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    & ul{
+        padding: 15px 20px;
+        outline: none;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #FFFFFF33;
+    }
+    & li{
+        margin: 0 20px;
+
+        & a{
+            font-size:16px ;
+            font-weight: 400;
+            text-transform: capitalize;
+            color: #ffffff;
+            transition: all .5s;
+        }
+        & .active , a:hover{
+            color: #E224DB;
+        } 
+    }
+
+    & .log-book-div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & .login{
+            outline: none;
+            border: none;
+            background: none;
+            color: white;
+            font-size:16px ;
+            transform: .5s;
+            margin-right: 20px;
+        }
+        & .login:hover{
+            background-color: #E224DB;
+        }
+        & .book-now{
+            background: #030014;
+            color: white;
+            font-weight: 700;
+            font-size: 16px;
+            width: 120px;
+            height: 55px;
+            border: none;
+            position: relative;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        & .book-now::after{
+            content: "";
+            position: absolute;
+            width: 104%;
+            height: 104%;
+            background-image: linear-gradient(to right , #243FE2 ,#E224DB) ;
+            border-radius:50px ;
+            z-index: -1;
+        }
+    }
+}
