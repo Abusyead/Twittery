@@ -212,17 +212,20 @@ li{
 }
 
 
+/* -- content-01 code start here -- */
+
+
 .content-container{
      max-width: 1600px;
      margin: auto;
      display: flex;
      align-items: center;
      justify-content: space-between;
-     gap: 80px;
+     gap: 100px;
      margin-top: 100px;
 }
 
-.rectangle{
+.content-01{
     position: relative;
     & table{
        min-width: 800px;
@@ -305,16 +308,11 @@ li{
 }
 
 
-
-
-
-
 .green{
     color: rgb(0, 192, 0);
 }
 .fine-tuned{
     text-align: left;
-    margin-left: 20px;
     & h2{
         font-size: 40px;
         font-weight: 600;
@@ -337,4 +335,42 @@ li{
             }
         }
     }
+}
+
+
+/* content-02 code start here */
+
+.earth-view{
+    min-width: 700px;
+    font-size: 25px;
+    background-color: #151515;
+    position: relative;
+
+    & div{
+        & p{
+            color:#66696c ;
+            margin: 30px;
+
+            & span{
+                color: white;
+                
+            }
+        }
+    }
+    hr{
+        border: 1px solid #66696c ;
+    }
+
+}    
+.earth-color{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color:#E224DB ;
+    position: absolute;
+    left: -300px;
+    top: -100px;
+    filter: blur(100px);
+    opacity: .3;
+    z-index: -1;
 }
