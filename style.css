@@ -461,3 +461,53 @@ li{
         font-size: 15px;
     }
 }
+
+
+
+/* tutorial-vido section code start here */
+
+.tutorial-container{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    & img{
+        opacity: 0.6;
+        width: 100%;
+        height: 100%;
+    }
+    .video-play{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        top: 0;
+        left: 0;
+
+        & p{
+            font-size: 36px;
+        }
+
+        & .circle{
+            width: 70px;
+            height: 70px;
+            border: 2px solid white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left:2px ;
+            cursor: pointer;
+
+            & .triangle{
+               border-left: 20px solid white;
+               border-top: 13px solid transparent;
+               border-bottom: 13px solid transparent;
+               cursor:pointer;
+            }
+        }
+    }
+}
