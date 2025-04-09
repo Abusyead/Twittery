@@ -692,3 +692,41 @@ li{
     }
 }
 
+ /* Questions section code start here */
+
+ .question-container{
+    width: 900px;
+    margin: 150px auto;
+
+    & h2{
+        text-align: center;
+        font-size: 45px;
+        font-weight: 500;
+        margin: 80px;
+    }
+ }
+ .question-body{
+    & details{
+        margin: 40px;
+       & summary{
+           font-size: 20px;
+           font-weight: 400;
+           list-style: none;
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+
+        }
+        & p{
+            font-size: 14px;
+            font-weight: 400;
+            color: #9CA3AF;
+            margin-top: 10px;
+        }
+    }
+
+    & details[open] i {
+        transform: rotate(180deg);
+        transition: transform 0.3s ease;
+    }
+ }
