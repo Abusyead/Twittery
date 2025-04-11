@@ -911,3 +911,74 @@ li{
             }
        }
  }
+
+
+ @media screen and (min-width: 1500px) and (max-width: 1700px) {
+
+    .container {
+        max-width: 1330px; 
+    }
+    
+    .bg-color-1 { 
+        left: 200px; 
+    }
+    
+    .bg-color-2 {
+        right: 200px; 
+    } 
+
+    /* content-01 code start here */
+        
+    
+    .content-container{
+        max-width: 1400px;
+        gap: 50px;
+        margin-top: 80px;
+    }
+
+    .content-01{ 
+        & table{
+            width: 500px;
+        }
+    }
+
+    /* content-02 code start here */
+
+    .earth-view{
+        width: 550px;
+    }
+    
+    /* works-section code start hare */
+
+    .works-container{
+        max-width: 1350px;
+        margin: 80px auto 120px; 
+    }
+
+    .works-color{ 
+        right: 0px; 
+    }
+
+    .works-parents-div{
+        gap: 50px; 
+    }
+    .work-line-1{
+        left: 297px;
+    }
+    .work-line-2{
+        right: 297px;
+    }
+
+    /* customers-section code start here */
+
+    .customers-container{
+        width: 1300px;
+        margin: auto;
+    }
+
+     /* footer section code start here */
+
+    .footer-container{
+        width: 1300px;
+    }
+}
