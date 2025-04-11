@@ -697,6 +697,7 @@ li{
  .question-container{
     width: 900px;
     margin: 150px auto;
+    position: relative;
 
     & h2{
         text-align: center;
@@ -704,29 +705,107 @@ li{
         font-weight: 500;
         margin: 80px;
     }
+    & .question-body{
+        & details{
+            margin: 40px;
+           & summary{
+               font-size: 20px;
+               font-weight: 400;
+               list-style: none;
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+    
+            }
+            & p{
+                font-size: 14px;
+                font-weight: 400;
+                color: #9CA3AF;
+                margin-top: 10px;
+            }
+        }
+    
+        & details[open] i {
+            transform: rotate(180deg);
+            transition: transform 0.3s ease;
+        }
+     }
  }
- .question-body{
-    & details{
-        margin: 40px;
-       & summary{
-           font-size: 20px;
-           font-weight: 400;
-           list-style: none;
-           display: flex;
-           align-items: center;
-           justify-content: space-between;
 
+ /* Community section code start here */
+
+ #community-section{
+    margin-top: 100px;
+    position: relative;
+ }
+ .community-color{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: #E224DB;
+    filter: blur(100px);
+    opacity: .3;
+    top: -200px;
+    left: 200px;
+    z-index: -1000;
+ }
+
+ .community-section{
+    position:absolute;
+    padding: 30px;
+    display: flex;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: -2;
+    background-color: #07031C;
+    & .community-container{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        flex-direction: column;
+        h2{
+            font-size: 35px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
         }
         & p{
-            font-size: 14px;
-            font-weight: 400;
-            color: #9CA3AF;
-            margin-top: 10px;
+            font-size: 16px;
+            color:#86909D ;
+            margin-bottom: 20px;
         }
-    }
-
-    & details[open] i {
-        transform: rotate(180deg);
-        transition: transform 0.3s ease;
+        & button{
+            width: 200px;
+            height: 50px;
+            position: relative;
+            color: white;
+            background-color: #243FE2;
+            border-radius: 50px;
+            border: none; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: transparent;
+            cursor: pointer;
+            transition: .5s;
+        }
+        & button::after{
+            content: "";
+            position:absolute;
+            width: 104%;
+            height: 110%;
+            background: linear-gradient(to right , #EA00F5 ,#531DD0);
+            border-radius: 50px;
+            z-index: -1;
+        }
+        & button:hover{
+           background-color: black;
+        }
     }
  }
